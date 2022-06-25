@@ -776,6 +776,7 @@ body {
 /*----- Модальное окно -----*/
 .backdrop {
   position: fixed;
+  padding: 40px;
   top: 0;
   left: 0;
   width: 100%;
@@ -786,6 +787,7 @@ body {
 }
 .modal {
   position: absolute;
+  padding: 40px;
   width: 528px;
   min-height: 581px;
   top: 50%;
@@ -817,4 +819,51 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -100%) scale(0) rotate(180deg);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-title {
+  margin-bottom: 12px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.05;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-label {
+  margin-bottom: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.input-wrap {
+  margin-bottom: 10px;
+}
+.comment-area {
+  resize: none;
+}
+.comment-area {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }

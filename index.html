@@ -572,13 +572,32 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop data-modal">
+      <!-- is-hidden -->
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="icon-close-black-18dp" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-label" for="name">Имя</label>
+          <div class="input-wrap">
+            <input class="modal-input" type="text" name="name" id="name" />
+          </div>
+          <label class="modal-label" for="tel">Телефон</label>
+          <div class="input-wrap">
+            <input class="modal-input" type="tel" name="tel" id="tel" />
+          </div>
+          <label class="modal-label" for="email">Почта</label>
+          <div class="input-wrap">
+            <input class="modal-input" type="email" name="email" id="email" />
+          </div>
+          <label class="modal-label" for="comment">Комментарий</label>
+          <textarea class="comment-area" name="comment" id="comment">
+          </textarea>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
